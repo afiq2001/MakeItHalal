@@ -48,10 +48,10 @@
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" style="background-color:#FEA1A1" aria-current="true" href="Stafflistcourse.php">SENARAI KURSUS</a>
+                    <a class="nav-link active" style="background-color:#FDE2F3" aria-current="true" href="Stafflistcourse.php">SENARAI KURSUS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="true" href="Staffapplicationlist.php">PERMOHONAN</a>
+                    <a class="nav-link active" aria-current="true" href="Staffapplicationlist.php">SENARAI PEMOHON</a>
                 </li>
             </ul>
         </div>
@@ -100,8 +100,8 @@
                     ?>
                 </tbody>
             </table>
-            <a style="background-color:#FEA1A1" href="../ManageMarriageRequestStaff/StaffrequestApplicationList.php" class="btn">Kembali</a>
-            <a style="background-color:#FEA1A1" href="Staffaddcourse.php" class="btn">Tambah Kursus</a>
+            <a style="background-color:#FDE2F3" href="../ManageMarriageRequestStaff/StaffrequestApplicationList.php" class="btn">Kembali</a>
+            <a style="background-color:#FDE2F3" href="Staffaddcourse.php" class="btn">Tambah Kursus</a>
         </div>
     </div>
 

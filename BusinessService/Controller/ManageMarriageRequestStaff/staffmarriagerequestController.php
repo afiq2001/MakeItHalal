@@ -1,5 +1,5 @@
 <?php
-require_once '../../Model/ManageMariageRequestStaff/staffmarriagerequestModel.php';
+require_once 'C:\xampp\xam\htdocs\MakeItHalal\BusinessService\Model\ManageMariageRequestStaff\staffmarriagerequestModel.php';
 
 class admininfoController extends admininfoModel
 {

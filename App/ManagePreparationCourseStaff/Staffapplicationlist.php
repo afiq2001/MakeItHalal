@@ -12,13 +12,6 @@
 </head>
 
 <body>
-    <?php include "../../BusinessService/Controller/ManagePreparationCourseStaff/staffmarriagecourseController.php";
-
-    $obj = new adminaddcourseController();
-
-    $result = $obj->displaylist();
-
-    ?>
     <header>
         <div class="header-content">
             <img src="../../Public/images/logo_jaip.png" alt="Logo" class="logo">
@@ -32,8 +25,8 @@
     <div class="admin-navbar">
         <a href="adminaddcourse.php">Home</a>
         <a href="#">User Management</a>
-        <a href="../ManageUserMarriageRequest/RequestMarriage.php">Kebenaran Berkahwin</a>
-        <a href="../ManageUserPreparationCourse/Courseapplication.php">Kursus Kahwin</a>
+        <a href="../ManageMarriageRequestStaff/StaffrequestApplicationList.php">Kebenaran Berkahwin</a>
+        <a href="../ManagePreparationCourseStaff/Staffapplicationlist.php">Kursus Kahwin</a>
         <a href="#">Daftar Kahwin</a>
         <a href="#">Kad Kahwin</a>
         <a href="#">Insentif</a>
@@ -48,12 +41,11 @@
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" style="background-color:#FEA1A1" aria-current="true" href="applicant_info.php">SENARAI PEMOHON KURSUS KAHWIN</a>
+                    <a class="nav-link active" style="background-color:#FDE2F3" aria-current="true" href="../">SENARAI PEMOHON</a>
                 </li>
             </ul>
         </div>
         <div class="card-body">
-            <?php if ($result && $result->num_rows > 0) : ?>
                 <table class="table">
                     <thead>
                         <tr>
@@ -64,23 +56,18 @@
                         </tr>
                     </thead>
                     <tbody class="table-group-divider">
-                        <?php while ($row = $result->fetch_assoc()) : ?>
                             <tr>
-                                <td><?php echo $row['user_noIC']; ?></td>
-                                <td><?php echo $row['user_name']; ?></td>
-                                <td><?php echo $row['Course_noSeries']; ?></td>
+                                <td>01124080959</td>
+                                <td>MUHAMMAD AFIQ HASIF</td>
+                                <td>PRK213131</td>
                                 <td>
                                     <button style="font-size:15px" href="../../StaffManagePreparationCourse//view/adminapplicantcourse.php"><i class="fa fa-eye"></i></button>
                                     <button style="font-size:15px; margin-left:5px;"><i class="fa fa-check"></i></button>
                                 </td>
                             </tr>
-                        <?php endwhile; ?>
                     </tbody>
                 </table>
-            <?php else : ?>
-                <p>No data found.</p>
-            <?php endif; ?>
-            <a style="background-color:#FEA1A1" href="Stafflistcourse.php" class="btn">Back</a>
+            <a style="background-color:#FDE2F3" href="Stafflistcourse.php" class="btn">Back</a>
         </div>
         </section>
     </div>
@@ -89,5 +76,4 @@
         <p>&copy; 2023 Sistem Maklumat Perkahwinan Islam Pahang. All rights reserved.</p>
     </footer>
 </body>
-
 </html>

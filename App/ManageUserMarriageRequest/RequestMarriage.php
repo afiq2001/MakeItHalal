@@ -55,7 +55,7 @@
         <a href="adminaddcourse.php">Home</a>
         <a href="#">User Management</a>
         <a href="../../ManageUserMarriageRequest/view/RequestMarriage.php">Kebenaran Berkahwin</a>
-        <a href="../../ManageUserPreparationCourse/view/Courseapplication.php">Kursus Kahwin</a>
+        <a href="../../App/ManageUserPreparationCourse/Courselist.php">Kursus Kahwin</a>
         <a href="#">Daftar Kahwin</a>
         <a href="#">Kad Kahwin</a>
         <a href="#">Insentif</a>
@@ -81,7 +81,7 @@
                         <h4>Nombor KP Pasangan :</h4>
                         <input style="width:200px;">
                         <a style="background-color:#FEA1A1; margin-right:20px;" class="btn">Cari</a>
-                        <a style="background-color:#FEA1A1; margin-right:20px;" href="../../ManageUserMarriageRequest/view/Aplicantinfo.php" class="btn">Daftar Baru</a>
+                        <a style="background-color:#FEA1A1; margin-right:20px;" href="../../App/ManageUserMarriageRequest/Applicantinfo.php" class="btn">Daftar Baru</a>
                     </div>
                     <table class="table">
                         <thead>
@@ -97,16 +97,16 @@
                         <tbody>
                             
                             <tr>
-                                <td>1</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <a class="btn btn-primary">Edit</a>
-                                    <a class="btn btn-primary">Download</a>
-                                    <a class="btn btn-primary">Delete</a>
-                                    <a class="btn btn-primary">Submit</a>
+                                    <a style="background-color:#FEA1A1; margin-right:20px;" class="btn">Edit</a>
+                                    <a style="background-color:#FEA1A1; margin-right:20px;" class="btn">Download</a>
+                                    <a style="background-color:#FEA1A1; margin-right:20px;" class="btn">Delete</a>
+                                    <a style="background-color:#FEA1A1; margin-right:20px;" class="btn">Submit</a>
                                 </td>
                             </tr>
                         </tbody>

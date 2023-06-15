@@ -1,5 +1,5 @@
 <?php
-require_once '../../Model/ManageUserMarriageRequest/marriagerequestModel.php';
+require_once 'C:\xampp\xam\htdocs\MakeItHalal\BusinessService\Model\ManageUserMarriageRequest\marriagerequestModel.php';
 
 class addinfoController extends userinfoModel
 {
@@ -12,7 +12,7 @@ class addinfoController extends userinfoModel
             echo "Afiq hensem"; // Debugging statement
         } else {
             // echo "Afiqhensem";
-            header("Location: page/Module2/ManageUserMarriageRequest/view/Spouseinfo.php");
+            header("Location:/MakeItHalal/App/ManageUserMarriageRequest/Spouseinfo.php");
             exit();
         }
     }
@@ -25,7 +25,7 @@ class addinfoController extends userinfoModel
             echo "Afiq hensem"; // Debugging statement
         } else {
             // echo "Afiqhensem";
-            header("Location: page/Module2/ManageUserMarriageRequest/view/Marriageinfo.php");
+            header("Location: /MakeItHalal/App/ManageUserMarriageRequest/Marriageinfo.php");
             exit();
         }
     }
@@ -38,7 +38,7 @@ class addinfoController extends userinfoModel
             echo "Afiq hensem"; // Debugging statement
         } else {
             // echo "Afiqhensem";
-            header("Location: page/Module2/ManageUserMarriageRequest/view/Documentinfo.php");
+            header("Location: /MakeItHalal/App/ManageUserMarriageRequest/Documentinfo.php");
             exit();
         }
     }
@@ -51,7 +51,7 @@ class addinfoController extends userinfoModel
             echo "Afiq hensem"; // Debugging statement
         } else {
             // echo "Afiqhensem";
-            header("Location: page/Module2/ManageUserMarriageRequest/view/RequestMarriage.php");
+            header("Location: /MakeItHalal/App/ManageUserMarriageRequest/RequestMarriage.php");
             exit();
         }
     }

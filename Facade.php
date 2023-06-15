@@ -1,22 +1,8 @@
 <?php
-//require_once 'C:\xampp\xam\htdocs\cobaan\Controller\ManageUserCourseController\useraddcourseController.php';
-//require_once 'C:\xampp\xam\htdocs\cobaan\ManageUserController\loginuserController.php';
-require_once 'C:\xampp\xam\htdocs\make_it_halal\page\Module2\ManagePreparationCourseStaff\controller\staffmarriagecourseController.php';
-require_once 'C:\xampp\xam\htdocs\make_it_halal\page\Module2\ManageUserPreparationCourse\controller\preparationcourseController.php';
-require_once 'C:\xampp\xam\htdocs\make_it_halal\page\Module2\ManageUserMarriageRequest\controller\marriagerequestController.php';
-// if (isset($_POST['addcourse'])) {
-//     $noIC = $_POST['noIC'];
-//     $nama = $_POST['nama'];
-//     $jantina = $_POST['jantina'];
-//     $tarikhlahir = $_POST['tarikhlahir'];
-//     $warganegara = $_POST['warganegara'];
-//     $negeri = $_POST['negeri'];
-//     $notel = $_POST['notel'];
-//     $emel = $_POST['emel'];
+require_once 'C:\xampp\xam\htdocs\MakeItHalal\BusinessService\Controller\ManagePreparationCourseStaff\staffmarriagecourseController.php';
+require_once 'C:\xampp\xam\htdocs\MakeItHalal\BusinessService\Controller\ManageUserPreparationCourse\preparationcourseController.php';
+require_once 'C:\xampp\xam\htdocs\MakeItHalal\BusinessService\Controller\ManageUserMarriageRequest\marriagerequestController.php';
 
-//     $usercourse = new useraddcourseController();
-//     $usercourse->useraddcourse($noIC, $nama, $jantina, $tarikhlahir, $warganegara, $negeri, $notel, $emel);
-// }
 
 if(isset($_POST['adminaddcourse'])){
             $Course_nosiries = $_POST['Course_nosiries'];

@@ -43,7 +43,7 @@
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="true" href="applicant_info.php"
-                        style="background-color:#FEA1A1">BUTIRAN KURSUS KAHWIN</a>
+                        style="background-color:#FDE2F3">BUTIRAN KURSUS KAHWIN</a>
                 </li>
             </ul>
         </div>
@@ -133,7 +133,7 @@
 
             
             
-            <a style="background-color:#FEA1A1; margin-right:20px;" href="Staffapplicationlist.php" class="btn">Kembali</a><input style="background-color:#FEA1A1; margin-right:20px;" href="#" class="btn" type="submit" name="adminaddcourse" value="Add">
+            <a style="background-color:#FDE2F3; margin-right:20px;" href="Staffapplicationlist.php" class="btn">Kembali</a><input style="background-color:#FDE2F3; margin-right:20px;" href="#" class="btn" type="submit" name="adminaddcourse" value="Add">
             </form>
         </div>
     </div>

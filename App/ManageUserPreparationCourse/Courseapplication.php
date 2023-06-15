@@ -9,13 +9,13 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <title>Permohonan Kursus</title>
-    <link rel="stylesheet" type="text/css" href="../../../../style/admin_style.css">
+    <link rel="stylesheet" type="text/css" href="../../Public/Style/admin_style.css">
 </head>
 
 <body>
     <header>
         <div class="header-content">
-            <img src="../../../../image/logo_jaip.png" alt="Logo" class="logo">
+            <img src="../../Public/images/logo_jaip.png" alt="Logo" class="logo">
             <div class="welcome-text">
                 <h1>Welcome to Sistem Maklumat Perkahwinan Islam Pahang</h1>
             </div>

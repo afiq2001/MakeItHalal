@@ -1,5 +1,5 @@
 <?php
-require_once '../../Model/ManageUserPreparationCourse/preparationcourseModel.php';
+require_once 'C:\xampp\xam\htdocs\MakeItHalal\BusinessService\Model\ManageUserPreparationCourse\preparationcourseModel.php';
 
 class useraddcourseController extends useraddcourseModel
 {
@@ -13,7 +13,7 @@ class useraddcourseController extends useraddcourseModel
             
              // Debugging statement
         } else {
-            header("Location: page/Module2/ManageUserPreparationCourse/view/Courseapplication.php");
+            header("Location:/MakeItHalal/App/ManageUserPreparationCourse/Courseapplication.php");
             exit();
         }
     }

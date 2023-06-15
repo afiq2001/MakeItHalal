@@ -1,5 +1,5 @@
 <?php
-require_once '../db_conn.php';
+require_once 'C:\xampp\xam\htdocs\MakeItHalal\BusinessService\Model\db_conn.php';
 
 class adminaddcourseModel extends Connection
 {

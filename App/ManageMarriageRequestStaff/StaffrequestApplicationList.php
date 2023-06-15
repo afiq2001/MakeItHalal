@@ -26,8 +26,8 @@
     <div  class="admin-navbar">
         <a href="adminaddcourse.php">Home</a>
         <a href="#">User Management</a>
-        <a href="../../ManageUserMarriageRequest/view/RequestMarriage.php">Kebenaran Berkahwin</a>
-        <a href="../../ManageUserPreparationCourse/view/Courseapplication.php">Kursus Kahwin</a>
+        <a href="../ManageMarriageRequestStaff/StaffrequestApplicationList.php">Kebenaran Berkahwin</a>
+        <a href="../ManagePreparationCourseStaff/Staffapplicationlist.php">Kursus Kahwin</a>
         <a href="#">Daftar Kahwin</a>
         <a href="#">Kad Kahwin</a>
         <a href="#">Insentif</a>

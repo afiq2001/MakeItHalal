@@ -1,5 +1,5 @@
 <?php
-require_once '../../Model/ManagePreparationCourseStaff/staffmarriagecourseStaffModel.php';
+require_once 'C:\xampp\xam\htdocs\MakeItHalal\BusinessService\Model\ManagePreparationCourseStaff\staffmarriagecourseModel.php';
 
 class adminaddcourseController extends adminaddcourseModel
 {
@@ -12,7 +12,7 @@ class adminaddcourseController extends adminaddcourseModel
             echo "Afiq"; // Debugging statement
         } else {
             // echo "Afiqhensem angat2";
-            header("Location: page/Module2/ManagePreparationCourseStaff/view/Stafflistcourse.php");
+            header("Location: /MakeItHalal/App/ManagePreparationCourseStaff/Stafflistcourse.php");
             exit();
         }
     }
