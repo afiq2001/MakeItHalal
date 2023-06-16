@@ -27,8 +27,8 @@
     <div  class="admin-navbar">
         <a href="adminaddcourse.php">Home</a>
         <a href="#">User Management</a>
-        <a href="../ManageUserMarriageRequest/RequestMarriage.php">Kebenaran Berkahwin</a>
-        <a href="../ManageUserPreparationCourse/Courseapplication.php">Kursus Kahwin</a>
+        <a href="../ManageMarriageRequestStaff/StaffrequestApplicationList.php">Kebenaran Berkahwin</a>
+        <a href="../ManagePreparationCourseStaff/Stafflistcourse.php">Kursus Kahwin</a>
         <a href="#">Daftar Kahwin</a>
         <a href="#">Kad Kahwin</a>
         <a href="#">Insentif</a>
@@ -119,7 +119,7 @@
                     </tr>
                 </tbody>
             </table>
-            <a style="background-color:#FEA1A1" href="StaffrequestApplication.php" class="btn">Back</a>
+            <a style="background-color:#F2BED1" href="StaffrequestApplication.php" class="btn">Back</a>
             </section>
         </div>
         <br>

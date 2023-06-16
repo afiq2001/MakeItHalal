@@ -72,7 +72,7 @@
                         <a style="background-color:#FEA1A1;" class="nav-link active" aria-current="true" href="../ManageUserMarriageRequest/RequestMarriage.php">PERMOHONAN BERKAHWIN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="true" href="../ManageUserPreparationCourse/Courseapplication.php">KURSUS KAHWIN</a>
+                        <a class="nav-link active" aria-current="true" href="../ManageUserPreparationCourse/Courselist.php">KURSUS KAHWIN</a>
                     </li>
                 </ul>
                 <br>
