@@ -4,7 +4,7 @@ session_start();
 
  if(isset($_POST['submit'])){
 
-    $username = $_POST['user_IC'];  
+    $username = $_POST['user_ic'];  
     $password = $_POST['user_password'];  
       
         //to prevent from mysqli injection  
@@ -13,7 +13,7 @@ session_start();
         $username = mysqli_real_escape_string($conn, $username);  
         $password = mysqli_real_escape_string($conn, $password);  
       
-        $sql = "select * from user_profile where user_IC = '$username' and user_password = '$password'";  
+        $sql = "select * from user_profile where user_ic = '$username' and user_password = '$password'";  
         $result = mysqli_query($conn, $sql);  
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
         $count = mysqli_num_rows($result);  
