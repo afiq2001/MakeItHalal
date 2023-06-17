@@ -23,7 +23,7 @@
         </div>
     </header>
 
-    <div  class="admin-navbar">
+    <div class="admin-navbar">
         <a href="adminaddcourse.php">Home</a>
         <a href="#">User Management</a>
         <a href="../ManageUserMarriageRequest/RequestMarriage.php">Kebenaran Berkahwin</a>
@@ -43,7 +43,8 @@
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
-                    <a style="background-color:#FEA1A1" class="nav-link active" aria-current="true" href="Applicantinfo.php">MAKLUMAT
+                    <a style="background-color:#FEA1A1" class="nav-link active" aria-current="true"
+                        href="Applicantinfo.php">MAKLUMAT
                         PEMOHON</a>
                 </li>
                 <li class="nav-item">
@@ -76,8 +77,7 @@
                 <div class="input-group mb-3">
                     <label for="basic-url" class="form-label">Tarikh Lahir :</label>
                     <div class="input-group">
-                        <input style="margin-right:80%" type="date" class="form-control" name=user_DOB
-                            id=user_DOB>
+                        <input style="margin-right:80%" type="date" class="form-control" name=user_DOB id=user_DOB>
                     </div>
                 </div>
 
@@ -91,14 +91,16 @@
                 <div class="input-group mb-3">
                     <label for="basic-url" class="form-label">Warganegara :</label>
                     <div class="input-group">
-                        <input style="margin-right:80%" type="text" class="form-control" name=user_citizenship id=user_citizenship>
+                        <input style="margin-right:80%" type="text" class="form-control" name=user_citizenship
+                            id=user_citizenship>
                     </div>
                 </div>
 
                 <div class="input-group">
                     <label for="basic-url" class="form-label">Alamat :</label>
                     <div class="input-group">
-                        <textarea class="form-control" aria-label="With textarea" name=user_address id=user_address></textarea>
+                        <textarea class="form-control" aria-label="With textarea" name=user_address
+                            id=user_address></textarea>
                     </div>
                 </div>
 
@@ -107,9 +109,9 @@
                     <div class="input-group">
                         <input style="margin-right:80%" type="text" class="form-control" name=user_phone id=user_phone>
                     </div>
-                </div> 
+                </div>
 
-                
+
                 <div class="input-group mb-3">
                     <label for="basic-url" class="form-label">Taraf Pendidikan :</label>
                     <div class="input-group">
@@ -121,14 +123,16 @@
                 <div class="input-group mb-3">
                     <label for="basic-url" class="form-label">Sektor Pekerjaan :</label>
                     <div class="input-group">
-                        <input style="margin-right:80%" type="text" class="form-control" name=user_sect_employ id=user_sect_employ>
+                        <input style="margin-right:80%" type="text" class="form-control" name=user_sect_employ
+                            id=user_sect_employ>
                     </div>
                 </div>
 
                 <div class="input-group mb-3">
                     <label for="basic-url" class="form-label">Pekerjaan Jawatan :</label>
                     <div class="input-group">
-                        <input style="margin-right:80%" type="text" class="form-control" name=user_job_position id=user_job_position>
+                        <input style="margin-right:80%" type="text" class="form-control" name=user_job_position
+                            id=user_job_position>
                     </div>
                 </div>
 
@@ -136,7 +140,8 @@
                     <label for="basic-url" class="form-label">Amaun Pendapatan :</label>
                     <div class="input-group">
                         <span class="input-group-text">RM</span>
-                        <input style="margin-right:70%" type="text" class="form-control" name=user_salary id=user_salary>
+                        <input style="margin-right:70%" type="text" class="form-control" name=user_salary
+                            id=user_salary>
                     </div>
                 </div>
 
@@ -144,11 +149,13 @@
                 <div class="input-group mb-3">
                     <label for="basic-url" class="form-label">No Sijil Kursus Pra-Perkahwinan :</label>
                     <div class="input-group">
-                        <input style="margin-right:80%" type="text" class="form-control" name=user_certPreCourse id=user_certPreCourse>
+                        <input style="margin-right:80%" type="text" class="form-control" name=user_certPreCourse
+                            id=user_certPreCourse>
                     </div>
                 </div>
                 <br>
-                <input style="background-color:#FEA1A1; margin-right:20px;" href="#" class="btn success" type="submit" name="addapplicantinfo" value="Submit">
+                <input style="background-color:#FEA1A1; margin-right:20px;" href="#" class="btn success" type="submit"
+                    name="addapplicantinfo" value="Submit">
             </div>
     </div>
     </form>
@@ -156,7 +163,7 @@
     </section>
     </div>
     <br>
-    
+
     </section>
     </div>
     <br>

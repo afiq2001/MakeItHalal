@@ -51,7 +51,7 @@
         </div>
     </header>
 
-    <div  class="admin-navbar">
+    <div class="admin-navbar">
         <a href="adminaddcourse.php">Home</a>
         <a href="#">User Management</a>
         <a href="../../ManageUserMarriageRequest/view/RequestMarriage.php">Kebenaran Berkahwin</a>
@@ -69,10 +69,12 @@
             <div class="card text-center">
                 <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
-                        <a style="background-color:#FEA1A1;" class="nav-link active" aria-current="true" href="../ManageUserMarriageRequest/RequestMarriage.php">PERMOHONAN BERKAHWIN</a>
+                        <a style="background-color:#FEA1A1;" class="nav-link active" aria-current="true"
+                            href="../ManageUserMarriageRequest/RequestMarriage.php">PERMOHONAN BERKAHWIN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="true" href="../ManageUserPreparationCourse/Courseapplication.php">KURSUS KAHWIN</a>
+                        <a class="nav-link active" aria-current="true"
+                            href="../ManageUserPreparationCourse/Courseapplication.php">KURSUS KAHWIN</a>
                     </li>
                 </ul>
                 <br>
@@ -81,7 +83,8 @@
                         <h4>Nombor KP Pasangan :</h4>
                         <input style="width:200px;">
                         <a style="background-color:#FEA1A1; margin-right:20px;" class="btn">Cari</a>
-                        <a style="background-color:#FEA1A1; margin-right:20px;" href="../../App/ManageUserMarriageRequest/Applicantinfo.php" class="btn">Daftar Baru</a>
+                        <a style="background-color:#FEA1A1; margin-right:20px;"
+                            href="../../App/ManageUserMarriageRequest/Applicantinfo.php" class="btn">Daftar Baru</a>
                     </div>
                     <table class="table">
                         <thead>
@@ -95,7 +98,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            
+
                             <tr>
                                 <td></td>
                                 <td></td>
@@ -128,8 +131,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-        integrity="sha384-hPjPitmd9FESomwLMkOSkh3lpZmI81myyKATcK/rBZIT6MBH0FQPBVGrUNwm7ScB"
-        crossorigin="anonymous"></script>
+        integrity="sha384-hPjPitmd9FESomwLMkOSkh3lpZmI81myyKATcK/rBZIT6MBH0FQPBVGrUNwm7ScB" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
