@@ -14,9 +14,9 @@
         exit();
     }
 
-    // Define the file names to check
-$file1 = 'C:\xampp\htdocs\MakeItHalal\BusinessService\Model\db_connection.php';
-$file2 = 'C:\xampp\htdocs\MakeItHalal\BusinessService\Model\db_conn.php';
+// Define the file names to check
+$file1 = 'C:\xampp\xam\htdocs\MakeItHalal\BusinessService\Model\db_connection.php';
+$file2 = 'C:\xampp\xam\htdocs\MakeItHalal\BusinessService\Model\db_conn.php';
 
 // Check if the first file is available
 if (file_exists($file1)) {

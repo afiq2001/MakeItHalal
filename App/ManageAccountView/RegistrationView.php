@@ -1,5 +1,5 @@
 <?php
-include '../../Register_check.php';
+include 'C:\xampp\xam\htdocs\MakeItHalal\Register_check.php';
 
 if (isset($_POST["Submit"])) {
     // Retrieve user input from the form

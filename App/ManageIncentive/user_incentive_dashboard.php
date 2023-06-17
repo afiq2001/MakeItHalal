@@ -8,8 +8,9 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Define the file names to check
-$file1 = 'C:\xampp\htdocs\MakeItHalal\BusinessService\Model\db_connection.php';
-$file2 = 'C:\xampp\htdocs\MakeItHalal\BusinessService\Model\db_conn.php';
+$file1 = 'C:\xampp\xam\htdocs\MakeItHalal\BusinessService\Model\db_connection.php';
+$file2 = 'C:\xampp\xam\htdocs\MakeItHalal\BusinessService\Model\db_conn.php';
+// C:\xampp\xam\htdocs\MakeItHalal\BusinessService\Model\db_connection.php
 
 // Check if the first file is available
 if (file_exists($file1)) {
