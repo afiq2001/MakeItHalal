@@ -3,7 +3,7 @@
 $host = 'localhost';
 $dbname = 'make_it_halal';
 $usernameDB = 'root';
-$passwordDB = 'admin';
+$passwordDB = '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $usernameDB, $passwordDB);
