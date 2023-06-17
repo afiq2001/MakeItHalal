@@ -1,0 +1,27 @@
+<!-- <?php
+// AddUserProfileProfileModel.php
+
+class AddUserProfileProfileModel {
+    private $conn;
+
+    public function __construct($conn) {
+        $this->conn = $conn;
+    }
+
+    public function addUserProfile($user_name, $user_IC, $user_phoneNum, $user_city, $user_gender, $user_email, $user_type, $user_password) {
+        $query = "INSERT INTO user_profile (user_name, user_IC, user_phoneNum, user_city, user_gender, user_email, user_type, user_password) 
+                  VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        
+        $stmt = $this->conn->prepare($query);
+        $stmt->bind_param("ssssssss", $user_name, $user_IC, $user_phoneNum, $user_city, $user_gender, $user_email, $user_type, $user_password);
+
+        if ($stmt->execute()) {
+            $user_ID = $stmt->insert_id;
+            $stmt->close();
+            return $user_ID;
+        } else {
+            $stmt->close();
+            return false;
+        }
+    }
+} -->
