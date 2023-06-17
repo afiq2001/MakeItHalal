@@ -78,7 +78,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
         <section id="user-info">     
             <h2>Permohonan Insentif Khas Pasangan Pengantin</h2>
             <h3>User Details</h3>
-            <form action="user_incentive_upload.php" method="POST" enctype="multipart/form-data">
+            <form action="../../BusinessService/Model/ManageIncentiveModel/user_incentive_upload.php" method="POST" enctype="multipart/form-data">
             <label for="details">Applicant IC:</label>
             <input type="text" id="details" name="details" value="<?php echo $user['user_IC']; ?>" disabled>
 
@@ -96,7 +96,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
                 <option value="Kelantan">Kelantan</option>
                 <option value="Melaka">Melaka</option>
                 <option value="Negeri Sembilan">Negeri Sembilan</option>
-                <option value="Pahang">Pahang</option>
+                <option selected value="Pahang">Pahang</option>
                 <option value="Perak">Perak</option>
                 <option value="Perlis">Perlis</option>
                 <option value="Pulau Pinang">Pulau Pinang</option>
