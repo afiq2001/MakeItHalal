@@ -15,12 +15,6 @@
         height: auto;
       }
   
-      .right-logo {
-        margin-left: auto;
-        width: 100px;
-        height: auto;
-      }
-  
       .welcome-text {
         margin-left: 20px; /* Adjust the margin as needed */
       }
@@ -125,7 +119,62 @@
       section {
         padding: 20px;
       }
-  
+
+      /* Content Style */
+      .setting{
+        display: flex;
+      }
+
+      .button2 {
+        background-color: #66ffff;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 250px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      .back1{
+        background-color: #e96464; 
+        color: black; 
+      }
+      
+      .back1:hover {
+        background-color: #e76f6f;
+        color: white;
+      }
+
+
+      table {
+        width: 80%;
+        margin-top: 50px;
+      }
+      .th1, .td1 {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+      .th1 {
+        background-color: #d8d8d8;
+      }
+
+      .td1{
+        background-color: #f2f2f2;
+      }
+
+      .edit1 {
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 30px;
+      }
+
       /* Footer styles */
       footer {
         background-color: gray;
@@ -134,7 +183,6 @@
         color: #fff;
       }
   
-/* <<<<<<< Azriezal
       .logout-container {
         margin-left: 1;
       }
@@ -146,11 +194,65 @@
         margin-left: auto;
       }
 
+      th{
+        text-align: left;
+      }
+
+      input {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #a2cef7;
+        border-radius: 20px;
+        font-size: 16px;
+      }
       
-=======
-/* CSS for logout */
-/* .admin-navbar a.logout {
-  background-color: rgb(255, 0, 0); /* Set the background color */
-  color: #fff; /* Set the text color */
-  float: right;
-} */
+      input:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+
+      select {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #a2cef7;
+        border-radius: 20px;
+        font-size: 16px;
+      }
+      
+      select:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+
+      .checkbox1{
+        width: 15px;
+        padding: 1px;
+        
+      }
+
+      #Groom_Name{
+        width: 600px;
+      }
+
+      #Address, #Cur_Address{
+        width: 600px;
+        height: 100px;
+      }
+
+      .tab{
+        width: 33%;
+      }
+
+      .para{
+        font-size: 27px;
+        
+      }
+
+      .setting{
+        display: flex;
+      }
+
+      .comment1{
+        height: 150px;
+        width: 500px;
+      }
