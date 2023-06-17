@@ -54,7 +54,7 @@
                                 while ($row = mysqli_fetch_assoc($result)){
                                     
                                     $user_name=$row['user_name'];
-                                    $user_IC=$row['user_IC'];
+                                    $user_ic=$row['user_ic'];
                                     $user_DOB=$row['user_DOB'];
                                     $user_race=$row['user_race'];
                                     $user_phone=$row['user_phone'];
@@ -76,7 +76,7 @@
                                     
                                     <tr>
                                         <th class="tab"> <label for="Bil">NoKP </label></th>
-                                        <th scope = "row">: '.$user_IC.'</th>
+                                        <th scope = "row">: '.$user_ic.'</th>
                                     </tr>
                                     <tr>
                                         <th class="tab"> <label for="Bil">Tarikh Lahir</label></th>

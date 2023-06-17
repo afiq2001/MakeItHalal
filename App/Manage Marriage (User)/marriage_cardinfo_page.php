@@ -72,12 +72,12 @@
                             
                             if ($result->num_rows > 0) {
                                 while ($row = mysqli_fetch_assoc($result)){
-                                    $user_IC=$row['user_IC'];
+                                    $user_ic=$row['user_ic'];
                                     
 
                                     echo '<tr>
                                         <th class="tab"> <label for="Bil">NoKP Suami</label></th>
-                                        <th scope = "row">: '.$user_IC.'</th>
+                                        <th scope = "row">: '.$user_ic.'</th>
                                     </tr>';
                                     }
                                 }
@@ -114,14 +114,14 @@
                             
                             if ($result->num_rows > 0) {
                                 while ($row = mysqli_fetch_assoc($result)){
-                                    $spouse_IC=$row['spouse_IC'];
+                                    $spouse_ICNum=$row['spouse_ICNum'];
                                     $akuanNo=$row['akuanNo'];
                                     $date_registration=$row['date_registration'];
 
 
                                     echo '<tr>
                                         <th class="tab"> <label for="Bil">NoKP Isteri</label></th>
-                                        <th scope = "row">: '.$spouse_IC.'</th>
+                                        <th scope = "row">: '.$spouse_ICNum.'</th>
                                     </tr>
                                     <tr>
                                         <th class="tab"> <label for="Bil">No Akuan</label></th>

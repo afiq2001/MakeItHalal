@@ -53,9 +53,9 @@
                             if ($result->num_rows > 0) {
                                 while ($row = mysqli_fetch_assoc($result)){
                                     $user_name=$row['user_name'];
-                                    $user_IC=$row['user_IC'];
+                                    $user_ic=$row['user_ic'];
                                     $spouseName=$row['spouseName'];
-                                    $spouse_IC=$row['spouse_IC'];
+                                    $spouse_ICNum=$row['spouse_ICNum'];
                                     $akuanNo=$row['akuanNo'];
                                     $date_registration=$row['date_registration'];
                                     
@@ -66,7 +66,7 @@
                                     </tr>
                                     <tr>
                                         <th class="tab"> <label for="Bil">No KP Pemohon</label></th>
-                                        <th scope = "row">: '.$user_IC.'</th>
+                                        <th scope = "row">: '.$user_ic.'</th>
                                     </tr>
                                     <tr>
                                         <th class="tab"> <label for="Bil">Nama Pasangan</label></th>
@@ -74,7 +74,7 @@
                                     </tr>
                                     <tr>
                                         <th class="tab"> <label for="Bil">No KP Pasangan</label></th>
-                                        <th scope = "row">: '.$spouse_IC.'</th>
+                                        <th scope = "row">: '.$spouse_ICNum.'</th>
                                     </tr>
                                     <tr>
                                         <th class="tab"> <label for="Bil">Tarikh Mohon</label></th>

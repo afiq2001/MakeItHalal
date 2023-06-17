@@ -78,7 +78,7 @@
                             
                             if ($result->num_rows > 0) {
                                 while ($row = mysqli_fetch_assoc($result)){
-                                    $user_IC=$row['user_IC'];
+                                    $user_ic=$row['user_ic'];
                                     $user_DOB=$row['user_DOB'];
                                     $user_phone=$row['user_phone'];
                                     $user_race=$row['user_race'];
@@ -90,7 +90,7 @@
 
                                     echo '<tr>
                                         <th class="tab"> <label for="Bil">NoKP</label></th>
-                                        <th scope = "row">: '.$user_IC.'</th>
+                                        <th scope = "row">: '.$user_ic.'</th>
                                     </tr>';
                                     echo '<tr>
                                         <th class="tab"> <label for="Bil">Tarikh Lahir</label></th>
@@ -163,7 +163,7 @@
                             
                             if ($result->num_rows > 0) {
                                 while ($row = mysqli_fetch_assoc($result)){
-                                    $spouse_IC=$row['spouse_IC'];
+                                    $spouse_ICNum=$row['spouse_ICNum'];
                                     $spouseDOB=$row['spouseDOB'];
                                     $spousePhoneNum=$row['spousePhoneNum'];
                                     $spouseRace=$row['spouseRace'];
@@ -175,7 +175,7 @@
 
                                     echo '<tr>
                                         <th class="tab"> <label for="Bil">NoKP</label></th>
-                                        <th scope = "row">: '.$spouse_IC.'</th>
+                                        <th scope = "row">: '.$spouse_ICNum.'</th>
                                     </tr>';
                                     echo '<tr>
                                         <th class="tab"> <label for="Bil">Tarikh Lahir</label></th>

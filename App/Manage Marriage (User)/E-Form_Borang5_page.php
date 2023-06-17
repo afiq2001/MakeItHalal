@@ -56,11 +56,11 @@
                                 while ($row = mysqli_fetch_assoc($result)){
                                     
                                     $user_name=$row['user_name'];
-                                    $user_IC=$row['user_IC'];
+                                    $user_ic=$row['user_ic'];
                                     $user_address=$row['user_address'];
 
                                     $spouseName=$row['spouseName'];
-                                    $spouse_IC=$row['spouse_IC'];
+                                    $spouse_ICNum=$row['spouse_ICNum'];
                                     $spouseAddress=$row['spouseAddress'];
                                     
                                     $wali_name=$row['wali_name'];
@@ -77,12 +77,12 @@
 
                                     echo '
                                         <p style="text-align: left" >Nama Pengantin Lelaki '.$user_name.'<p>
-                                        <p style="text-align: left" > No. Kad Pengenalan '.$user_IC.', Alamat '.$user_address.'<p><br>
+                                        <p style="text-align: left" > No. Kad Pengenalan '.$user_ic.', Alamat '.$user_address.'<p><br>
                                     ';
 
                                     echo '
                                         <p style="text-align: left" >Nama Pengantin Perempuan '.$spouseName.'<p>
-                                        <p style="text-align: left" > No. Kad Pengenalan '.$spouse_IC.', Alamat '.$spouseAddress.'<p><br>
+                                        <p style="text-align: left" > No. Kad Pengenalan '.$spouse_ICNum.', Alamat '.$spouseAddress.'<p><br>
                                     ';
                                     
                                     echo '
