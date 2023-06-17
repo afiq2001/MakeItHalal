@@ -28,7 +28,7 @@ if (isset($_POST["Submit"])) {
     } else if ($user_type == "Admin") {
         // Prepare the SQL statement
         $insert = mysqli_query($conn, "INSERT INTO user_profile (user_name, user_ic, user_phone, user_city, user_gender, user_email, user_type, user_password)
-        VALUES ('$user_name', '$user_IC', '$user_phoneNum', '$user_city', '$user_gender', '$user_email', '$user_type', '$user_password')");
+        VALUES ('$user_name', '$user_IC', '$user_phone', '$user_city', '$user_gender', '$user_email', '$user_type', '$user_password')");
 
         if ($insert) {
             echo "<script>alert('Your Registration has been created successfully');</script>";
@@ -70,15 +70,15 @@ if (isset($_POST["Submit"])) {
         // Function to validate the form
         function validateForm() {
             var user_name = document.getElementById("user_name").value;
-            var user_IC = document.getElementById("user_IC").value;
-            var user_phoneNum = document.getElementById("user_phoneNum").value;
+            var user_ic = document.getElementById("user_ic").value;
+            var user_phone = document.getElementById("user_phone").value;
             var user_city = document.getElementById("user_city").value;
             var user_email = document.getElementById("user_email").value;
             var user_type = document.getElementById("user_type").value;
             var user_password = document.getElementById("user_password").value;
             var confirmPassword = document.getElementById("Confirm_Password").value;
 
-            if (user_name === "" || user_IC === "" || user_phoneNum === "" || user_city === "" ||
+            if (user_name === "" || user_ic === "" || user_phone === "" || user_city === "" ||
                 user_email === "" || user_type === "" || user_password === "" || confirmPassword === "") {
                 alert("Please fill in all fields.");
                 return false;

@@ -5,7 +5,7 @@ include '../../../config.php';
 
 // Initialize variables to store form data and error messages
 $user_name = $user_ic = $user_phone = $user_city = $user_gender = $user_email = $user_type = $user_password = "";
-$name_error = $IC_error = $phoneNum_error = $city_error = $gender_error = $email_error = $type_error = $password_error = "";
+$name_error = $IC_error = $phone_error = $city_error = $gender_error = $email_error = $type_error = $password_error = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve and validate user details from the form
@@ -162,14 +162,14 @@ mysqli_close($conn);
                 <?php if (!empty($name_error)) echo '<div class="error-message">' . $name_error . '</div>'; ?>
             </div>
             <div class="form-group <?php if (!empty($IC_error)) echo 'error'; ?>">
-                <label for="user_IC">IC Number:</label>
-                <input type="text" class="form-control" id="user_IC" name="user_IC" value="<?php echo $user_IC; ?>" required>
-                <?php if (!empty($IC_error)) echo '<div class="error-message">' . $IC_error . '</div>'; ?>
+                <label for="user_">IC Number:</label>
+                <input type="text" class="form-control" id="user_ic" name="user_ic" value="<?php echo $user_ic; ?>" required>
+                <?php if (!empty($ic_error)) echo '<div class="error-message">' . $IC_error . '</div>'; ?>
             </div>
-            <div class="form-group <?php if (!empty($phoneNum_error)) echo 'error'; ?>">
-                <label for="user_phoneNum">Phone Number:</label>
-                <input type="text" class="form-control" id="user_phoneNum" name="user_phoneNum" value="<?php echo $user_phoneNum; ?>" required>
-                <?php if (!empty($phoneNum_error)) echo '<div class="error-message">' . $phoneNum_error . '</div>'; ?>
+            <div class="form-group <?php if (!empty($phone_error)) echo 'error'; ?>">
+                <label for="user_phone">Phone Number:</label>
+                <input type="text" class="form-control" id="user_phone" name="user_phone" value="<?php echo $user_phone; ?>" required>
+                <?php if (!empty($phone_error)) echo '<div class="error-message">' . $phoneNum_error . '</div>'; ?>
             </div>
             <div class="form-group <?php if (!empty($city_error)) echo 'error'; ?>">
                 <label for="user_city">City:</label>

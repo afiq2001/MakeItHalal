@@ -24,7 +24,7 @@ session_start();
             if($user_type == "User"){
                  header("Location: ../ManageAccountView/UserProfileView.php");
             }      elseif($user_type == "Staff"){
-              header("Location: ../php/staffPageView.php");
+              header("Location: ../ManageAccountView/UserProfileView.php.php");
             } elseif($user_type == "Staff"){
               echo "<script>alert('Login failed. Invalid username or password.');</script>";
 
