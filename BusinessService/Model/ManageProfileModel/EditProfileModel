@@ -1,0 +1,41 @@
+<!-- <?php
+// Include the database configuration file
+include '../../../config.php';
+
+class EditProfileModel {
+    private $conn;
+
+    public function __construct() {
+        $this->conn = $conn;
+    }
+
+    public function getUserByID($user_ID) {
+        // Fetch the user information from the database
+        $query = "SELECT * FROM user_profile WHERE user_ID = $user_ID";
+        $result = mysqli_query($this->conn, $query);
+
+        // Check if the user exists
+        if (mysqli_num_rows($result) > 0) {
+            $user = mysqli_fetch_assoc($result);
+            return $user;
+        } else {
+            return null;
+        }
+    }
+
+    public function updateUserProfile($user_ID, $user_name, $user_email, $user_IC, $user_phoneNum, $user_city, $user_gender, $user_type, $user_password) {
+        // Update the user profile in the database
+        $query = "UPDATE user_profile SET user_name = '$user_name', user_email = '$user_email', user_IC = '$user_IC', user_phoneNum = '$user_phoneNum', user_city = '$user_city', user_gender = '$user_gender', user_type = '$user_type', user_password = '$user_password' WHERE user_ID = $user_ID";
+        $result = mysqli_query($this->conn, $query);
+
+        if ($result) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+// Close the database connection
+mysqli_close($conn);
+?> -->

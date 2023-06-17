@@ -1,0 +1,21 @@
+<!-- <?php
+    include '../config.php';
+
+class DELETEProfileModel {
+    private $conn;
+
+    public function __construct($conn) {
+        $this->conn = $conn;
+    }
+
+    public function deleteUserProfile($userID) {
+        // Delete the user from the database
+        $query = "DELETE FROM user_profile WHERE user_ID = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->bind_param('i', $userID);
+        $result = $statement->execute();
+        
+        return $result;
+    }
+}
+?> -->
