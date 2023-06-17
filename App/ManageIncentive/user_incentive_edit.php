@@ -92,7 +92,7 @@ if (!$application) {
     <h1>Edit Incentive Application</h1>
 
     <!-- Display the form with pre-filled values -->
-    <form action="user_incentive_update.php" method="POST">
+    <form action="../../BusinessService/Model/ManageIncentiveModel/user_incentive_update.php" method="POST">
     <label for="details">Applicant IC:</label>
             <input type="text" id="details" name="details" value="<?php echo $user['user_IC']; ?>" disabled>
 
@@ -107,7 +107,9 @@ if (!$application) {
             <label for="negeri">State:</label>
             <input type="text" id="negeri" name="negeri" value="<?php echo $application['negeri']; ?>">
         </div>
-        <!-- Add other fields as needed -->
+        <!-- hidden input -->
+        <input type="hidden" id="incentiveDate" name="incentiveDate" value="<?php echo date('Y-m-d H:i:s'); ?>">
+
 
         <button type="submit">Update</button>
     </form>
