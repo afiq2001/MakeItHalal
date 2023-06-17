@@ -28,7 +28,7 @@
         <a href="#">User Management</a>
         <a href="../ManageUserMarriageRequest/RequestMarriage.php">Kebenaran Berkahwin</a>
         <a href="../ManageUserPreparationCourse/Courseapplication.php">Kursus Kahwin</a>
-        <a href="../ManagePreparationCourseStaff/Staffapplicationlist.php">Admin</a>
+        <a href="../ManageMarriageRequestStaff/StaffrequestApplicationList.php">Admin</a>
         <a href="#">Daftar Kahwin</a>
         <a href="#">Kad Kahwin</a>
         <a href="#">Insentif</a>
@@ -99,13 +99,6 @@
                         <td>Afiq</td>
                         <td>PRK213131</td>
                         <td>23/6/2023</td>
-                        <td>Dalam Proses</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Zainal</td>
-                        <td>KDH12901</td>
-                        <td>29/5/2023</td>
                         <td>Dalam Proses</td>
                     </tr>
                 </tbody>

@@ -12,13 +12,6 @@
 </head>
 
 <body>
-    <?php include "../../BusinessService/Controller/ManageMarriageRequestStaff/staffmarriagerequestController.php";
-
-    $obj = new admininfoController();
-
-    $result = $obj->displayapplicantinfoModel();
-
-    ?>
     <header>
         <div class="header-content">
             <img src="../../Public/images/logo_jaip.png" alt="Logo" class="logo">
@@ -52,7 +45,7 @@
                         PEMOHON</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="true" href="Staffspouserinfo.php">MAKLUMAT PASANGAN</a>
+                    <a class="nav-link active" aria-current="true" href="Staffspouseinfo.php">MAKLUMAT PASANGAN</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="true" href="Staffmarriageinfo">MAKLUMAT PERKAHWINAN</a>
@@ -63,40 +56,25 @@
             </ul>
         </div>
         <div class="card-body">
-        <?php
-            if ($result->num_rows > 0) {
-                while ($row = $result->fetch_assoc()) {
-                    $user_IC = $_POST['user_IC'];
-                    $user_name = $_POST['user_name'];
-                    $user_DOB = $_POST['user_DOB'];
-                    $user_race = $_POST['user_race'];
-                    $user_citizenship = $_POST['user_citizenship'];
-                    $user_address = $_POST['user_address'];
-                    $user_phone = $_POST['user_phone'];
-                    $user_edu_level = $_POST['user_edu_level'];
-                    $user_sect_employ = $_POST['user_sect_employ'];
-                    $user_job_position = $_POST['user_job_position'];
-                    $user_salary = $_POST['user_salary'];
-                    $user_certPreCourse = $_POST['user_certPreCourse'];
-                    echo '
+       
             <div class="input-group mb-3">
                 <label for="basic-url" class="form-label">Nombor KP :</label>
                 <div class="input-group">
-                    <input style="margin-right:80%" type="text" class="form-control"'.$user_IC.'>
+                    <input style="margin-right:80%" type="text" class="form-control">
                 </div>
             </div>
 
             <div class="input-group mb-3">
                 <label for="basic-url" class="form-label">Nama Pemohon :</label>
                 <div class="input-group">
-                    <input style="margin-right:80%" type="text" class="form-control"'.$user_name.'>
+                    <input style="margin-right:80%" type="text" class="form-control">
                 </div>
             </div>
 
             <div class="input-group mb-3">
                 <label for="basic-url" class="form-label">Tarikh Lahir :</label>
                 <div class="input-group">
-                    <input style="margin-right:80%" type="text" class="form-control" '.$user_DOB.'>
+                    <input style="margin-right:80%" type="text" class="form-control">
                 </div>
             </div>
 
@@ -212,9 +190,7 @@
             <a style="background-color:#F2BED1" href="StaffrequestApplication.php" class="btn">Back</a>
         </div>
     </div>
-';
-                }
-            } ?>
+
             </section>
         </div>
         <br>

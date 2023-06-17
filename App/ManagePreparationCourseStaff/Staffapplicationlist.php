@@ -41,7 +41,7 @@
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" style="background-color:#FDE2F3" aria-current="true" href="../">SENARAI PEMOHON</a>
+                    <a class="nav-link active" style="background-color:#FDE2F3" aria-current="true" href="#">SENARAI PEMOHON</a>
                 </li>
             </ul>
         </div>
@@ -61,7 +61,7 @@
                                 <td>MUHAMMAD AFIQ HASIF</td>
                                 <td>PRK213131</td>
                                 <td>
-                                    <button style="font-size:15px" href="../../StaffManagePreparationCourse//view/adminapplicantcourse.php"><i class="fa fa-eye"></i></button>
+                                    <button style="font-size:15px"><i class="fa fa-eye"></i></button>
                                     <button style="font-size:15px; margin-left:5px;"><i class="fa fa-check"></i></button>
                                 </td>
                             </tr>

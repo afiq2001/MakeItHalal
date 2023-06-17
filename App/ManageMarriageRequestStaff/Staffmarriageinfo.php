@@ -232,7 +232,7 @@
                 <label for="formFile" class="form-label">Bukti Pembayaran</label>
                 <input class="form-control" type="file" id="formFile">
             </div>
-            <a style="background-color:#FEA1A1" href="#" class="btn">Back</a>
+            <a style="background-color:#F2BED1" href="#" class="btn">Back</a>
         </div>
     </div>
 
