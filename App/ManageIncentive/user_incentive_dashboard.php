@@ -7,9 +7,19 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-// Include the database connection file
-// require_once 'BusinessService/Model/db_connection.php';
-require_once 'C:\xampp\htdocs\MakeItHalal\BusinessService\Model\db_connection.php';
+// Define the file names to check
+$file1 = 'C:\xampp\htdocs\MakeItHalal\BusinessService\Model\db_connection.php';
+$file2 = 'C:\xampp\htdocs\MakeItHalal\BusinessService\Model\db_conn.php';
+
+// Check if the first file is available
+if (file_exists($file1)) {
+    require_once $file1;
+} elseif (file_exists($file2)) { // If the first file is not available, check the second file
+    require_once $file2;
+} else { // If neither file is available, handle the error or provide an appropriate fallback
+    echo 'No database connection file available.';
+    // You can handle the error or provide a fallback solution here
+}
 
 // Get the user profile based on the user ID stored in the session
 $stmt = $pdo->prepare("SELECT * FROM user_profile WHERE user_ID = ?");
@@ -21,13 +31,13 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 <html>
 <head>
     <title>User Incentives - Sistem Maklumat Perkahwinan Islam Pahang</title>
-    <link rel="stylesheet" type="text/css" href="Public\Style\user_style.css">
-    <link rel="stylesheet" type="text/css" href="Public\Style\user_incentive.css">
+    <link rel="stylesheet" type="text/css" href="../../Public/Style/user_style.css">
+    <link rel="stylesheet" type="text/css" href="../../Public/Style/user_incentive.css">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <img src="Public\images\logo_jaip.png" alt="Logo" class="logo">
+            <img src="../../Public/images/logo_jaip.png" alt="Logo" class="logo">
             <div class="welcome-text">               
                 <h1>Sistem Maklumat Perkahwinan Islam Pahang</h1>
                 <!-- Display user information -->
@@ -36,31 +46,25 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
                 ?>   
             </div>
             <div class="right-logo-container">
-            <img src="Public\images\logo_make_it_halal.png" alt="Logo" class="right-logo">
+            <img src="../../Public/images/logo_make_it_halal.png" alt="Logo" class="right-logo">
             </div>
         </div>
     </header>
   
     <div class="navbar">
         <a href="#">Home</a>
-        <a href="#">User Profile</a>
-        <div class="dropdown">
-            <button class="dropbtn">Wedding
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Kebenaran Berkahwin</a>
-                <a href="#">Pendaftaran Nikah</a>
-                <a href="#">example</a>
-        </div>
-        </div>
-            <div class="dropdown active-button">
+        <a href="#">User Management</a>
+        <a href="../ManageUserPreparationCourse/Courseapplication.php">Kursus Kahwin</a>
+        <a href="">list</a>
+        <a href="#">Daftar Kahwin</a>
+        <a href="#">Kad Kahwin</a>
+        <div class="dropdown active-button">
             <button class="dropbtn ">Incentives
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a class="active" href="user_incentive.php">Incentive</a>
-                <a href="App/ManageIncentive/user_incentive_application.php">Incentives Application</a>
+                <a class="active" href="user_incentive_dashboard.php">Incentive</a>
+                <a href="user_incentive_application.php">Incentives Application</a>
                 <a href="user_incentive_status.php">Status</a>
             </div>
         </div>

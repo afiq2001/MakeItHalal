@@ -142,18 +142,7 @@
       color: #fff;
     }
 
-    .logout-container {
-      margin-left: 1;
-    }
-
-    .logout-button {
-      color: #ffffff;
-      background-color: #ff0000;
-      text-decoration: none;
-      margin-left: auto;
-    }
-
-    /* CSS for active navbar link */
+/* CSS for active navbar link */
 .navbar a.active {
   background-color: grey; /* Set the background color */
   color: #fff; /* Set the text color */
