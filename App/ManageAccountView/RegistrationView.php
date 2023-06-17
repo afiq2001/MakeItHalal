@@ -15,7 +15,7 @@ if (isset($_POST["Submit"])) {
     if ($user_type == "User" || $user_type == "Staff") {
         // Prepare the SQL statement
 
-        $insert = mysqli_query($conn, "INSERT INTO user_profile (user_name, user_IC, user_phoneNum, user_city, user_gender, user_email, user_type, user_password)
+        $insert = mysqli_query($conn, "INSERT INTO user_profile (user_name, user_ic, user_phone, user_city, user_gender, user_email, user_type, user_password)
         VALUES ('$user_name', '$user_IC', '$user_phoneNum', '$user_city', '$user_gender', '$user_email', '$user_type', '$user_password')");
 
             if ($insert) {
@@ -27,7 +27,7 @@ if (isset($_POST["Submit"])) {
 
     } else if ($user_type == "Admin") {
         // Prepare the SQL statement
-        $insert = mysqli_query($conn, "INSERT INTO user_profile (user_name, user_IC, user_phoneNum, user_city, user_gender, user_email, user_type, user_password)
+        $insert = mysqli_query($conn, "INSERT INTO user_profile (user_name, user_ic, user_phone, user_city, user_gender, user_email, user_type, user_password)
         VALUES ('$user_name', '$user_IC', '$user_phoneNum', '$user_city', '$user_gender', '$user_email', '$user_type', '$user_password')");
 
         if ($insert) {
@@ -110,12 +110,12 @@ if (isset($_POST["Submit"])) {
                                             placeholder="Name" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="user_IC" id="user_IC"
+                                        <input type="text" class="form-control" name="user_ic" id="user_ic"
                                             placeholder="IC Number" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="user_phoneNum"
-                                            id="user_phoneNum" placeholder="Mobile Number" />
+                                        <input type="text" class="form-control" name="user_phone"
+                                            id="user_phone" placeholder="Mobile Number" />
                                     </div>
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="user_city" id="user_city"

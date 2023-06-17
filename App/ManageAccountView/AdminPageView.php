@@ -121,8 +121,8 @@
                 $user_ID = $row['user_ID'];
                 $user_name = $row['user_name'];
                 $user_email = $row['user_email'];
-                $user_IC = $row['user_IC'];
-                $user_phoneNum = $row['user_phoneNum'];
+                $user_ic = $row['user_ic'];
+                $user_phone = $row['user_phone'];
                 $user_city = $row['user_city'];
                 $user_gender = $row['user_gender'];
                 $user_type = $row['user_type'];
@@ -132,8 +132,8 @@
                 echo "<td><b>$user_ID</b></td>";
                 echo "<td><b>$user_name</b></td>";
                 echo "<td><b>$user_email</b></td>";
-                echo "<td><b>$user_IC</b></td>";
-                echo "<td><b>$user_phoneNum</b></td>";
+                echo "<td><b>$user_ic</b></td>";
+                echo "<td><b>$user_phone</b></td>";
                 echo "<td><b>$user_city</b></td>";
                 echo "<td><b>$user_gender</b></td>";
                 echo "<td><b>$user_type</b></td>";

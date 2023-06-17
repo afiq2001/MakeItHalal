@@ -74,7 +74,7 @@ session_start();
                     <form action="" method="POST">
                         <!-- IC_Number input -->
                         <div class="form-outline mb-4">
-                            <input type="text" id="user_IC" name="user_IC"
+                            <input type="text" id="user_ic" name="user_ic"
                                 class="form-control form-control-lg" placeholder="IC Number" required/>
                             <label class="form-label" for="form3Example3"></label>
                         </div>

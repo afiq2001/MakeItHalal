@@ -26,8 +26,8 @@
                 if (mysqli_num_rows($result) > 0) {
                     $user = mysqli_fetch_assoc($result);
                     $user_name = $user['user_name'];
-                    $user_IC = $user['user_IC'];
-                    $user_phoneNum = $user['user_phoneNum'];
+                    $user_ic = $user['user_ic'];
+                    $user_phone = $user['user_phone'];
                     $user_city = $user['user_city'];
                     $user_gender = $user['user_gender'];
                     $user_email = $user['user_email'];
@@ -46,13 +46,13 @@
                     echo "</div>";
 
                     echo "<div class='form-group'>";
-                    echo "<label for='user_IC'>IC:</label>";
-                    echo "<input type='text' name='user_IC' user_ID='user_IC' value='$user_IC'>";
+                    echo "<label for='user_ic'>IC:</label>";
+                    echo "<input type='text' name='user_ic' user_ID='user_ic' value='$user_ic'>";
                     echo "</div>";
 
                     echo "<div class='form-group'>";
-                    echo "<label for='user_phoneNum'>Mobile Number:</label>";
-                    echo "<input type='text' name='user_phoneNum' user_ID='user_phoneNum' value='$user_phoneNum'>";
+                    echo "<label for='user_phone'>Mobile Number:</label>";
+                    echo "<input type='text' name='user_phone' user_ID='user_phone' value='$user_phone'>";
                     echo "</div>";
 
                     echo "<div class='form-group'>";

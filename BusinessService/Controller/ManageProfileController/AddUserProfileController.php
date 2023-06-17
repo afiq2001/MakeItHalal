@@ -4,14 +4,14 @@
 include '../../../config.php';
 
 // Initialize variables to store form data and error messages
-$user_name = $user_IC = $user_phoneNum = $user_city = $user_gender = $user_email = $user_type = $user_password = "";
+$user_name = $user_ic = $user_phone = $user_city = $user_gender = $user_email = $user_type = $user_password = "";
 $name_error = $IC_error = $phoneNum_error = $city_error = $gender_error = $email_error = $type_error = $password_error = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve and validate user details from the form
     $user_name = validateInput($_POST['user_name']);
-    $user_IC = validateInput($_POST['user_IC']);
-    $user_phoneNum = validateInput($_POST['user_phoneNum']);
+    $user_ic = validateInput($_POST['user_ic']);
+    $user_phone = validateInput($_POST['user_phone']);
     $user_city = validateInput($_POST['user_city']);
     $user_gender = validateInput($_POST['user_gender']);
     $user_email = validateInput($_POST['user_email']);
@@ -23,11 +23,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name_error = "Name is required";
     }
 
-    if (empty($user_IC)) {
+    if (empty($user_ic)) {
         $IC_error = "IC Number is required";
     }
 
-    if (empty($user_phoneNum)) {
+    if (empty($user_phone)) {
         $phoneNum_error = "Phone Number is required";
     }
 
@@ -55,8 +55,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // If there are no validation errors, insert the new user into the database
     if (empty($name_error) && empty($IC_error) && empty($phoneNum_error) && empty($city_error) && empty($gender_error) && empty($email_error) && empty($type_error) && empty($password_error)) {
-        $query = "INSERT INTO user_profile (user_name, user_IC, user_phoneNum, user_city, user_gender, user_email, user_type, user_password) 
-                  VALUES ('$user_name', '$user_IC', '$user_phoneNum', '$user_city', '$user_gender', '$user_email', '$user_type', '$user_password')";
+        $query = "INSERT INTO user_profile (user_name, user_ic, user_phone, user_city, user_gender, user_email, user_type, user_password) 
+                  VALUES ('$user_name', '$user_ic', '$user_phone', '$user_city', '$user_gender', '$user_email', '$user_type', '$user_password')";
         
         if (mysqli_query($conn, $query)) {
             // User added successfully

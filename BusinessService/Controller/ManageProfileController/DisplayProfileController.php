@@ -25,8 +25,8 @@
                     $user = mysqli_fetch_assoc($result);
                     $user_ID = $user['user_ID'];
                     $user_name = $user['user_name'];
-                    $user_IC = $user['user_IC'];
-                    $user_phoneNum = $user['user_phoneNum'];
+                    $user_ic = $user['user_ic'];
+                    $user_phone = $user['user_phone'];
                     $user_city = $user['user_city'];
                     $user_gender = $user['user_gender'];
                     $user_email = $user['user_email'];
@@ -39,8 +39,8 @@
                     echo "<table>";
                     echo "<style='margin-bottom: 10px;'><tr><th>Name:</th><td>$user_name</td></tr>";
                     echo "<style='margin-bottom: 10px;'><tr><th>Email:</th><td>$user_email</td></tr>";
-                    echo "<style='margin-bottom: 10px;'><tr><th>IC_Number:</th><td>$user_IC</td></tr>";
-                    echo "<style='margin-bottom: 10px;'><tr><th>Mobile_Number:</th><td>$user_phoneNum</td></tr>";
+                    echo "<style='margin-bottom: 10px;'><tr><th>IC_Number:</th><td>$user_ic</td></tr>";
+                    echo "<style='margin-bottom: 10px;'><tr><th>Mobile_Number:</th><td>$user_phone</td></tr>";
                     echo "<style='margin-bottom: 10px;'><tr><th>City:</th><td>$user_city</td></tr>";
                     echo "<style='margin-bottom: 10px;'><tr><th>Gender:</th><td>$user_gender</td></tr>";
                     echo "<style='margin-bottom: 10px;'><tr><th>roleSelect:</th><td>$user_type</td></tr>";

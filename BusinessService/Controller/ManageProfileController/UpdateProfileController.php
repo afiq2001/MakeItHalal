@@ -5,8 +5,8 @@
 if (isset($_POST['user_ID']) && isset($_POST['user_name']) && isset($_POST['user_email'])) {
     $user_ID = $_POST['user_ID'];
     $user_name = $_POST["user_name"];
-    $user_IC = $_POST["user_IC"];
-    $user_phoneNum = $_POST["user_phoneNum"];
+    $user_ic = $_POST["user_ic"];
+    $user_phone = $_POST["user_phone"];
     $user_city = $_POST["user_city"];
     $user_gender = $_POST["user_gender"];
     $user_email = $_POST["user_email"];
@@ -14,8 +14,8 @@ if (isset($_POST['user_ID']) && isset($_POST['user_name']) && isset($_POST['user
     $user_password = $_POST["user_password"];
 
     // Update the user information in the database
-    $query = "UPDATE user_profile SET user_name = '$user_name', user_email = '$user_email', user_IC = '$user_IC', 
-    user_phoneNum = '$user_phoneNum', user_city = '$user_city', user_gender = '$user_gender',
+    $query = "UPDATE user_profile SET user_name = '$user_name', user_email = '$user_email', user_ic = '$user_ic', 
+    user_phone = '$user_phone', user_city = '$user_city', user_gender = '$user_gender',
     user_type = '$user_type', user_password = '$user_password' WHERE user_ID = $user_ID";
     $result = mysqli_query($conn, $query);
     if ($result) {
