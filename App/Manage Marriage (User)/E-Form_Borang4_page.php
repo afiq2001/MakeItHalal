@@ -56,11 +56,11 @@
                                 while ($row = mysqli_fetch_assoc($result)){
                                     
                                     $user_name=$row['user_name'];
-                                    $user_IC=$row['user_IC'];
+                                    $user_ic=$row['user_ic'];
                                     $user_address=$row['user_address'];
 
                                     $spouseName=$row['spouseName'];
-                                    $spouse_IC=$row['spouse_IC'];
+                                    $spouse_ICNum=$row['spouse_ICNum'];
                                     $spouseAddress=$row['spouseAddress'];
                                     
                                     $wali_name=$row['wali_name'];
@@ -76,7 +76,7 @@
 
 
                                     echo '
-                                        <p style="text-align: left" >Saya '.$wali_name.' No. Kad Pengenalan '.$user_IC.' adalah '.$relationship.' 
+                                        <p style="text-align: left" >Saya '.$wali_name.' No. Kad Pengenalan '.$user_ic.' adalah '.$relationship.' 
                                         kepada '.$spouseName.'. Dengan ini membuat pengakuan bahawa saya bersetuju dengan perkahwinan di antara 
                                         '.$spouseName.' dengan '.$user_name.' dengan mas kahwinnya RM '.$dowry.' tunai. Saya akan mengakad nikahkan 
                                         sendiri perkahwinan ini.<p>

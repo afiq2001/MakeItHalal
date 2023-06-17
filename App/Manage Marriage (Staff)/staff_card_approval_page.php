@@ -54,9 +54,9 @@
                                 while ($row = mysqli_fetch_assoc($result)){
                                     $akuanNo=$row['akuanNo'];
                                     $user_name=$row['user_name'];
-                                    $user_IC=$row['user_IC'];
+                                    $user_ic=$row['user_ic'];
                                     $spouseName=$row['spouseName'];
-                                    $spouse_IC=$row['spouse_IC'];
+                                    $spouse_ICNum=$row['spouse_ICNum'];
                                     $apply_date=$row['apply_date'];
                                     $date_pickup=$row['date_pickup'];
                                     
@@ -72,7 +72,7 @@
                                     </tr>
                                     <tr>
                                         <th class="tab"> <label for="Bil">NoKP Pemohon</label></th>
-                                        <th scope = "row">: '.$user_IC.'</th>
+                                        <th scope = "row">: '.$user_ic.'</th>
                                     </tr>
                                     <tr>
                                         <th class="tab"> <label for="Bil">Nama Pasangan</label></th>
@@ -80,7 +80,7 @@
                                     </tr>
                                     <tr>
                                         <th class="tab"> <label for="Bil">NoKP Pasangan</label></th>
-                                        <th scope = "row">: '.$spouse_IC.'</th>
+                                        <th scope = "row">: '.$spouse_ICNum.'</th>
                                     </tr>
                                     <tr>
                                         <th class="tab"> <label for="Bil">Tarikh Mohon</label></th>
