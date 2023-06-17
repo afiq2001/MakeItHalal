@@ -14,8 +14,19 @@
         exit();
     }
 
-    // Include the database connection file
-    require_once 'database/db_connection.php';
+    // Define the file names to check
+$file1 = 'C:\xampp\htdocs\MakeItHalal\BusinessService\Model\db_connection.php';
+$file2 = 'C:\xampp\htdocs\MakeItHalal\BusinessService\Model\db_conn.php';
+
+// Check if the first file is available
+if (file_exists($file1)) {
+    require_once $file1;
+} elseif (file_exists($file2)) { // If the first file is not available, check the second file
+    require_once $file2;
+} else { // If neither file is available, handle the error or provide an appropriate fallback
+    echo 'No database connection file available.';
+    // You can handle the error or provide a fallback solution here
+}
 
     // Handle form submission
     if ($_SERVER["REQUEST_METHOD"] == "POST") {

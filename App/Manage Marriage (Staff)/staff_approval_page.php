@@ -88,9 +88,9 @@
                             if ($result->num_rows > 0) {
                                 while ($row = mysqli_fetch_assoc($result)){
                                     $user_name=$row['user_name'];
-                                    $user_IC=$row['user_IC'];
+                                    $user_ic=$row['user_ic'];
                                     $spouseName=$row['spouseName'];
-                                    $spouse_IC=$row['spouse_IC'];
+                                    $spouse_ICNum=$row['spouse_ICNum'];
 
                                     $akuanNo=$row['akuanNo'];
                                     $date_registration=$row['date_registration'];
@@ -102,8 +102,8 @@
                                  
 
                                     echo '<tr>
-                                    <td>'.$user_name.'<br>'.$user_IC.'</td>
-                                    <td>'.$spouseName.'<br>'.$spouse_IC.'</td>
+                                    <td>'.$user_name.'<br>'.$user_ic.'</td>
+                                    <td>'.$spouseName.'<br>'.$spouse_ICNum.'</td>
                                     <td>'.$akuanNo.'</td>
                                     <td>'.$date_registration.'</td>
                                     
