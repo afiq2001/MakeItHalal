@@ -52,14 +52,14 @@
     </header>
 
     <div class="admin-navbar">
-        <a href="adminaddcourse.php">Home</a>
+        <a href="../../ManageUserMarriageRequest/view/RequestMarriage.php"">Home</a>
         <a href="#">User Management</a>
         <a href="../../ManageUserMarriageRequest/view/RequestMarriage.php">Kebenaran Berkahwin</a>
         <a href="../../App/ManageUserPreparationCourse/Courselist.php">Kursus Kahwin</a>
-        <a href="#">Daftar Kahwin</a>
-        <a href="#">Kad Kahwin</a>
-        <a href="#">Insentif</a>
-        <a href="#">Konsultasi</a>
+        <a href="manage_registration.php">Daftar Kahwin</a>
+        <a href="manage_registration.php">Kad Kahwin</a>
+        <a href="../../App/ManageUserIncentive/user_incentive_dashboard.php">Insentif</a>
+        <a href="RequestConsultation.php">Konsultasi</a>
         <a method="POST" href="../../../admin_login2.php">Logout</a>
     </div>
 
