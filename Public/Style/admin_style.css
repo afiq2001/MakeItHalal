@@ -15,6 +15,12 @@
         height: auto;
       }
   
+      .right-logo {
+        margin-left: auto;
+        width: 100px;
+        height: auto;
+      }
+  
       .welcome-text {
         margin-left: 20px; /* Adjust the margin as needed */
       }
@@ -128,6 +134,7 @@
         color: #fff;
       }
   
+/* <<<<<<< Azriezal
       .logout-container {
         margin-left: 1;
       }
@@ -138,3 +145,12 @@
         text-decoration: none;
         margin-left: auto;
       }
+
+      
+=======
+/* CSS for logout */
+/* .admin-navbar a.logout {
+  background-color: rgb(255, 0, 0); /* Set the background color */
+  /*color: #fff; /* Set the text color */
+
+

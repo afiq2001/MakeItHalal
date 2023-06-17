@@ -3,7 +3,8 @@
     $host = 'localhost';
     $username = 'root';
     $password = '';
-    $database = 'make_it _halal';
+    $database = 'make_it_halal';
+
 
     // Create a database connection
     $conn = mysqli_connect($host, $username, $password, $database);
