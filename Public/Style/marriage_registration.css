@@ -1,33 +1,33 @@
     /* Reset some default styles */
     body, h1, h2, p, ul, li {
-        margin: 0;
-        padding: 0;
-      }
-  
-      /* Header styles */
-      .header-content {
-        display: flex;
-        align-items: center;
-      }
-  
-      .logo {
-        width: 70px; /* Adjust the width as needed */
-        height: auto;
-      }
-  
-      .welcome-text {
-        margin-left: 20px; /* Adjust the margin as needed */
-      }
-  
-      .welcome-text h1 {
-        margin-bottom: 10px; /* Adjust the margin as needed */
-      }
-  
-      /* General styles */
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header styles */
+    .header-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 70px; /* Adjust the width as needed */
+      height: auto;
+    }
+
+    .welcome-text {
+      margin-left: 20px; /* Adjust the margin as needed */
+    }
+
+    .welcome-text h1 {
+      margin-bottom: 10px; /* Adjust the margin as needed */
+    }
+
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
   
       /* Header styles */
       header {
@@ -43,7 +43,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url(../images/background_login.jpg);
+        background-image: url(../../Public/images/background_login.jpg);
         background-size: cover;
         background-position: center;
         opacity: 0.7;
@@ -119,7 +119,69 @@
       section {
         padding: 20px;
       }
-  
+
+      /* Content Style */
+      .button2 {
+        background-color: #66ffff;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 4px 600px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 10px;
+        
+      }
+
+      .back1{
+        background-color: #e96464; 
+        color: black; 
+      }
+      
+      .back1:hover {
+        background-color: #e76f6f;
+        color: white;
+      }
+
+      .setting {
+        display: flex;
+        gap: 10px;
+        margin-left: 3px;
+        width: 20px; /* Set the desired width */
+        height: 20px;
+      }
+
+      .setting1 {
+        display: flex;
+        gap: 7px;
+        margin-left: 1px;
+        width: 20px; /* Set the desired width */
+        height: 20px;
+      }
+
+      table {
+        width: 80%;
+        margin-top: 50px;
+      }
+      th, td {
+        border: 1px solid grey;
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: #d8d8d8;
+      }
+
+      .edit1 {
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 30px;
+      }
+
       /* Footer styles */
       footer {
         background-color: gray;
@@ -138,5 +200,3 @@
         text-decoration: none;
         margin-left: auto;
       }
-
-      
